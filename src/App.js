@@ -4,7 +4,7 @@ import ProductsPage from './components/products-page/ProductsPage';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App container py-3">
       <ProductsPage/>
     
     </div>

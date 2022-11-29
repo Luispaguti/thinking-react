@@ -5,11 +5,12 @@ import SearchBar from '../search-bar/SearchBar'
 import jsonData from './../../data.json'
 
 function ProductsPage() {
-  const [ products, setProducts ] = useState(jsonData)
+  const [search, setSearch] = useState('');
+  const [filterInStock, setFilterInStock] = useState(false);
   return (
-    <div>
-      <h1>IronStore</h1>
-      <SearchBar/>
+    <div >
+      <h1 className='mb-4'>IronStore</h1>
+      <SearchBar search={search} filterInStock={filterInStock}/>
       <ProductTable/>
     </div>
   )
