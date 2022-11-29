@@ -4,9 +4,10 @@ import data from '../../data.json'
 import { useState } from 'react';
 
 function ProductTable() {
-  // const [ productsToShow, setProductsToShow ]= useState([]);
-  // if (productsToShow.length === 0) {
-  //   return <div>Loading...</div>
+  const [ productsToShow, setProductsToShow ]= useState([]);
+  if (productsToShow.length === 0) {
+    return <div>Loading...</div>
+  }
   return (
     <div>
       <table className='table'>
