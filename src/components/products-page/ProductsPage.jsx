@@ -10,7 +10,7 @@ function ProductsPage() {
   return (
     <div >
       <h1 className='mb-4'>IronStore</h1>
-      <SearchBar search={search} filterInStock={filterInStock}/>
+      <SearchBar search={search} setSearch={setSearch} filterInStock={filterInStock}/>
       <ProductTable/>
     </div>
   )
