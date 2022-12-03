@@ -1,6 +1,6 @@
 import React from 'react'
 
-function SearchBar({search, filterInStock, setSearch}) {
+function SearchBar({search, filterInStock, setSearch, setFilterInStock}) {
   return (
     <div>
       Search
@@ -20,6 +20,9 @@ function SearchBar({search, filterInStock, setSearch}) {
           className='form-check-input'
           type="checkbox"
           id='flexCheckDefault'
+          onChange={(ev) => {
+            setFilterInStock(ev.target.checked)
+          }}
         />
         <label className='form-check-label' htmlFor="flexCheckDefault">
           Show products in stock
